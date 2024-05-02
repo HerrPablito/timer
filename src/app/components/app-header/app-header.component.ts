@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { Location } from '@angular/common';
 
+
 @Component({
   selector: 'app-header',
   standalone: true,
@@ -25,5 +26,8 @@ constructor(private router: Router, private location: Location) {}
   }
   routeToAbout() {
     this.router.navigate(['/about']);
+  }
+  routeToContact() {
+    this.router.navigate(['/contact']);
   }
 }
