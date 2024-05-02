@@ -1,0 +1,34 @@
+@import "../../scss/typography.scss";
+@import "../../scss/mixins.scss";
+@import "../../scss/variables.scss";
+
+.customTimerContainer {
+  @include container;
+  @include gridLayout;
+  background-color: $backgroundColor;
+  height: 100%;
+}
+.rubrik {
+  grid-column: 1 / span 2;
+  justify-self: flex-start;
+  align-self: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  h1 {
+    margin-left: 1rem;
+  }
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.info {
+  grid-column: 1 / span 2;
+  justify-self: start;
+  align-self: center;
+  padding-left: 1rem;
+}

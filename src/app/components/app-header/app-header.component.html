@@ -1,0 +1,33 @@
+<section class="headerContainer">
+  <div class="dropdown">
+    <img
+      src="./../../../assets/menu-alt-3-svgrepo-com.svg"
+      alt="menu"
+      class="menuButton"
+    />
+    <div class="dropdown-content">
+      <a href="/about">About Kids Timer</a>
+      <a href="/settings">Settings</a>
+      <a href="/contact">Contact</a>
+    </div>
+  </div>
+
+  <img
+    src="./../../../assets/home-house-svgrepo-com.svg"
+    alt="homepage"
+    (click)="routeToStart()"
+    class="homeButton"
+  />
+  <img
+    src="./../../../assets/back-svgrepo-com.svg"
+    alt="back button"
+    (click)="routeToPrevious()"
+    class="backButton"
+  />
+  <img
+    src="./../../../assets/settings-svgrepo-com.svg"
+    alt="settings"
+    (click)="routeToSettings()"
+    class="settingsButton"
+  />
+</section>

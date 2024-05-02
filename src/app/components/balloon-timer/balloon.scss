@@ -1,0 +1,68 @@
+.timerContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./../../../assets/kalas2.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.dot {
+  top: 10%;
+  left: 10%;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.end-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 45px;
+  font-weight: bold;
+  border-radius: 10px;
+  animation: blink 3s linear infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.start-button {
+  margin-bottom: auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  &:hover {
+    cursor: pointer;
+  }
+  &:active {
+    transform: scale(0.9);
+  }
+}
+img {
+  width: 80px;
+}
+.needle {
+  width: 100px;
+  top: 0%;
+  left: 110%;
+  position: absolute;
+  img {
+    width: 300px;
+  }
+}

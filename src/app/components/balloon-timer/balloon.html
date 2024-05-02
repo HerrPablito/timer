@@ -1,0 +1,16 @@
+<main class="timerContainer">
+  <div class="dot" [@moveDot]="animationState">
+    <img src="./../../../assets/baloonggg.svg" alt="balloon" />
+  </div>
+  <div class="end-message" *ngIf="showEndMessage">TIME`S UP!</div>
+  <button
+    class="start-button"
+    (click)="startAnimation()"
+    *ngIf="!animationStarted"
+  >
+    Start
+  </button>
+  <div [@moveNeedle]="needleAnimationState" class="needle">
+    <img class="needle" src="./../../../assets/fagel.svg" alt="" />
+  </div>
+</main>

@@ -1,0 +1,20 @@
+<section class="settingsContainer">
+  <header class="rubrik">
+    <h1>SETTINGS</h1>
+  </header>
+  <main class="settings">
+    <h3>Sound:</h3>
+  </main>
+  <div class="toggleSwitch">
+    <input
+      id="cb-toggle"
+      type="checkbox"
+      class="hide-me"
+      aria-labelledby="cb-label"
+      checked
+      [checked]="soundSettings.isSoundOn"
+      (change)="toggleAudio()"
+    />
+    <label for="cb-toggle" class="toggle"></label>
+  </div>
+</section>

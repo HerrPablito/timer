@@ -1,0 +1,46 @@
+<section class="setTimerContainer">
+  <header class="rubrik">
+    <h1 class="text">SET TIMER</h1>
+  </header>
+  <nav class="gettingDressed">
+    <img
+      class="clothesImage"
+      src="./../../../assets/clothes-shirt-svgrepo-com.svg"
+      alt="clothes"
+      (click)="routeToBalloonTimerPage()"
+    />
+    <h3 class="gettingDressedTime" (click)="routeToBalloonTimerPage()">
+      1 min
+    </h3>
+  </nav>
+  <nav class="twoMin">
+    <img
+      class="toothbrush"
+      (click)="routeToTwoMinutesPage()"
+      src="./../../../assets/toothbrush-health-care-svgrepo-com.svg"
+      alt="toothbrush"
+    />
+    <h3 class="twoMinText" (click)="routeToTwoMinutesPage()">2 min</h3>
+  </nav>
+  <nav class="bath">
+    <img
+      class="bathtub"
+      (click)="routeToUnderConstructionPage()"
+      src="./../../../assets/bathtub-clean-svgrepo-com.svg"
+      alt="bathtub"
+    />
+    <h3 class="bathTime" (click)="routeToUnderConstructionPage()">20 min</h3>
+  </nav>
+  <nav class="watchTv">
+    <img
+      class="tv"
+      src="./../../../assets/tv-svgrepo-com.svg"
+      alt="tv"
+      (click)="routeToUnderConstructionPage()"
+    />
+    <h3 class="tvTime" (click)="routeToUnderConstructionPage()">1 hour</h3>
+  </nav>
+  <article class="setOwnTimer" (click)="routeToCustomTimerPage()">
+    <h3 class="setOwnTimerBtn">Custom Timer</h3>
+  </article>
+</section>
