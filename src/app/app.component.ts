@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { AppHeaderComponent } from './components/app-header/app-header.component';
 
@@ -9,6 +9,16 @@ import { AppHeaderComponent } from './components/app-header/app-header.component
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'kids_timer';
+
+  ngOnInit() {
+    this.keepDeviceAwake();
+  }
+
+  keepDeviceAwake() {
+    if (document.visibilityState === 'visible') {
+      window.requestAnimationFrame(() => this.keepDeviceAwake());
+    }
+  }
 }
