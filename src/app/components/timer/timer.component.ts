@@ -55,7 +55,7 @@ export class TimerComponent implements OnInit {
 
   constructor(private soundSettings: SoundSettingsService) {
     if(typeof Audio !== 'undefined'){
-    this.backgroundAudio = new Audio("../../../assets/calm_game_music_1-49209.mp3");
+    this.backgroundAudio = new Audio("../../../assets/country-long-w-acrdn-17618.mp3");
     this.endAudio = new Audio("../../../assets/happy-logo-167474.mp3");      
     }else{
       console.log("Audio is not supported");
